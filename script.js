@@ -18,6 +18,8 @@ fetch(API_URL)
         arr.forEach(([key]) => {
             const option1 = document.createElement('li');
             const option2 = document.createElement('li');
+            option1.classList.add('dropdown-item');
+            option2.classList.add('dropdown-item');
             option1.textContent = key;
             option2.textContent = key;
             drop1.appendChild(option1);

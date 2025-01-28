@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Money Changer</title>
+    <title>Quick Money Changer</title>
     <link rel="icon" type="image/png" href="asset/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <div id="contain">
-        <h1>Money Changer</h1>
+    <header id="title">
+        <h1><span><img src="asset/favicon.png" alt="" width="60px" height="60px"></span>Quick Money Changer</h1>
+    </header>
+
+    <div id="contain" class="p-3">
+        <h1>Insert Nominal</h1>
         <form action="">
             <table id="container">
                 <tr>
                     <td>
                         <div class="dropdown" id="dp1">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select Currency</button>
+                            <button class="btn btn-secondary dropdown-toggle bg-success" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select</button>
                             <ul class="dropdown-menu dropdown-menu-dark" style="max-height: 200px; overflow-y: auto;">
                                 
                             </ul>
@@ -29,7 +33,7 @@
                     </td>
                     <td>
                         <div class="dropdown" id="dp2">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select Currency</button>
+                            <button class="btn btn-secondary dropdown-toggle bg-success" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select</button>
                               <ul class="dropdown-menu dropdown-menu-dark" style="max-height: 200px; overflow-y: auto;">
                                   
                               </ul>
@@ -39,7 +43,7 @@
                 <tr>
                     <td>
                         <div class="form-floating mb-3">
-                            <input id="input" type="number" class="form-control" id="floatingInput" placeholder="name@example.com" autocomplete="off">
+                            <input id="input" type="number" class="form-control" placeholder="Nominal" autocomplete="off">
                             <label for="floatingInput">Nominal</label>
                         </div>
                     </td>
@@ -48,14 +52,14 @@
                     </td>
                     <td>
                         <div class="form-floating mb-3">
-                            <input id="hasil" type="number" class="form-control" id="floatingInput" placeholder="name@example.com" autocomplete="off" disabled>
-                            <label for="floatingInput">Nominal</label>
+                            <input id="hasil" type="number" class="form-control" placeholder="Result" autocomplete="off" disabled>
+                            <label for="floatingInput">Result</label>
                         </div>
                     </td>
                 </tr>
             </table>    
         </form>
-        <button id="convert" type="submit" class="btn btn-primary">Convert</button>
+        <button id="convert" type="submit" class="btn btn-primary w-50">Convert</button>
     </div>
 
     <div id="modal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
