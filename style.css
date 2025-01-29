@@ -25,3 +25,8 @@
 #dp1 ul li, #dp2 ul li {
     cursor: pointer;
 }
+
+.tombol {
+    width: 100px;
+    overflow: hidden;
+}
